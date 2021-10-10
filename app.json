@@ -1,0 +1,108 @@
+{
+    "name": "CarnivalMusic",
+    "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls",
+  "keywords": [
+    "python",
+    "telegram",
+    "bot",
+    "voicechat",
+    "telegram-bot",
+    "pyrogram",
+    "pytgcalls",
+    "livvymusic",
+    "tgcalls",
+    "jiosaavn",
+    "telegram-vcbot",
+    "telegram-musicbot"
+  ],
+    "repository": "https://github.com/imAddyxD/LivvyMusic",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "Pyrogram Session String",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Bot Token from @BotFather",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "Bot Name",
+            "required": true,
+            "value": ""
+        },
+        "BG_IMAGE": {
+            "description": "BG Image telegraph link",
+            "required": true,
+            "value": "https://telegra.ph/file/62481e4230d8a5c438840.jpg"
+        },
+        "OWNER_ID": {
+            "description": "Owner ID",
+            "required": true,
+            "value": ""
+        },
+        "ARQ_API_KEY": {
+            "description": "ARQ API Key from @ARQRobot",
+            "required": true,
+            "value": ""
+        },
+        "LOG_CHANNEL": {
+            "description": "create a private channel and get the channel id, add your bot as admin to the channel too",
+            "required": true,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "Bot Username without @",
+            "required": true,
+            "value": "MissLivvyBot"
+        },
+        "ASSISTANT_NAME": {
+            "description": "Assistant Username without @",
+            "required": true,
+            "value": "LivvyMusic"
+        },
+        "OWNER_NAME": {
+            "description": "Owner Name",
+            "required": false,
+            "value": "X-MeN"
+        },
+        "API_ID": {
+            "description": "APP ID from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "APP Hash from my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "SUDO Users ID (Separate with Space) ",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "Maximum Duration of Music To Play In VC",
+            "required": true,
+            "value": "15"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Updates Channel Username (Recommended Don't Change)",
+            "required": false,
+            "value": "RhythmOfficial"
+        },
+        "SUPPORT_GROUP": {
+            "description": "Support Group Username (Recommended Don't Change)",
+            "required": false,
+            "value": "RhythmOff"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    },
+    {
+     "url": "heroku/nodejs"
+    }  
+  ]
+}

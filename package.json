@@ -1,0 +1,8 @@
+{
+  "name": "LivvyMusic",
+  "description": "Livvy Music Player Bot",
+  "version": "1.0.0",
+  "engines": {
+    "node": "15.x"
+  }
+}
